@@ -161,6 +161,14 @@ export default {
       this.newValues[type] = val;
       console.log(this.newValues);
     },
+    addEvent() {
+      this.events.push({
+        time: this.newValues["time"],
+        title: this.newValues["title"],
+        location: this.newValues["location"],
+        description: this.newValues["description"],
+      });
+    },
   },
 };
 </script>
